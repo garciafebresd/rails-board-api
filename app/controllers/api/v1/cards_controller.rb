@@ -1,6 +1,6 @@
 module Api
     module V1
-        class CardController < Api::V1::ApiController
+        class CardsController < Api::V1::ApiController
             before_action :set_card, only: [:show, :update, :destroy]
 
             def index

@@ -1,6 +1,6 @@
 module Api
     module V1
-        class VoteController < Api::V1::ApiController
+        class VotesController < Api::V1::ApiController
 
             before_action :set_comment, only: [:show, :update, :destroy]
 

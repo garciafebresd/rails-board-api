@@ -18,13 +18,13 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :card, except: [:new, :edit] do
+      resources :cards, except: [:new, :edit] do
       end
 
-      resources :comment, except: [:new, :edit] do
+      resources :comments, except: [:new, :edit] do
       end
 
-      resources :vote, except: [:new, :edit]do
+      resources :votes, except: [:new, :edit]do
       end
 
       resources :settings, only: [] do

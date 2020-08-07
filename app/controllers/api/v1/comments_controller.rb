@@ -1,6 +1,6 @@
 module Api
     module V1
-        class CommentController < Api::V1::ApiController
+        class CommentsController < Api::V1::ApiController
 
             before_action :set_comment, only: [:show, :update, :destroy]
 
