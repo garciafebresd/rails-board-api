@@ -17,6 +17,16 @@ Rails.application.routes.draw do
           get :profile
         end
       end
+
+      resources :card, except: [:new, :edit] do
+      end
+
+      resources :comment, except: [:new, :edit] do
+      end
+
+      resources :vote, except: [:new, :edit]do
+      end
+
       resources :settings, only: [] do
         get :must_update, on: :collection
       end
